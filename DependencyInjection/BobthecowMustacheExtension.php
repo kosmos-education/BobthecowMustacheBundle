@@ -77,15 +77,6 @@ class BobthecowMustacheExtension extends Extension
         }
         unset($config['globals'], $config['loader_id'], $config['partials_loader_id']);
         $container->setParameter('mustache.options', $config);
-
-        $this->addClassesToCompile(array(
-            'Mustache_Context',
-            'Mustache_HelperCollection',
-            'Mustache_Loader',
-            'Mustache_Loader_FilesystemLoader',
-            'Mustache_Engine',
-            'Mustache_Template',
-        ));
     }
 
     /**

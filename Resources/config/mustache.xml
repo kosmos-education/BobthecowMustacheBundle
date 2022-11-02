@@ -13,7 +13,7 @@
     </parameters>
 
     <services>
-        <service id="mustache" class="%mustache.class%">
+        <service id="mustache" class="%mustache.class%" public="true">
             <argument>%mustache.options%</argument>
         </service>
 
@@ -23,7 +23,7 @@
             <argument type="service" id="templating.finder" />
         </service>
 
-        <service id="mustache.loader" class="%mustache.loader.class%">
+        <service id="mustache.loader" class="%mustache.loader.class%" public="true">
             <argument type="service" id="templating.locator" />
             <argument type="service" id="templating.name_parser" />
         </service>
