@@ -27,8 +27,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('mustache');
+        $treeBuilder = new TreeBuilder('mustache');
+        $rootNode = $treeBuilder->getRootNode();
 
         // $rootNode->setInfo('Mustache Configuration');
 
